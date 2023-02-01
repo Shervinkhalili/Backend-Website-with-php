@@ -1,0 +1,139 @@
+<!DOCTYPE html>  
+<html>  
+<head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  color:#f1f1f1;
+}  
+.container {  
+    padding: 50px;  
+    direction: rtl;
+  background-color: rgb(92, 103, 107);  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+  border-radius: 30px;
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+} 
+input[type=tel]{
+  border-radius: 30px;
+  width: 150px;
+  padding: 10px;
+} 
+div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  border-radius: 50px;
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+  <div class="header">
+    <div class="top-menu">
+        <h1>
+            <a class="limak" id="lim">Limak</a>
+        </h1>
+        <div class="menu" style="color:#f1f1f1; font: size 40px;">
+          <ul class="top-menu" >
+
+              <li ><a href="index.html">
+                      صفحه اصلی
+                  </a></li>
+
+          </ul>
+      </div>
+       
+  </div>
+  <div class="banner">
+      <h1 class="top-banner">معماری داخلی لیماک</h1>
+  </div>
+
+</div>
+<hr style="margin:10px;width:100%;">
+<form action="requset.php" method="post">  
+  <div class="container">  
+  <center>  <h1> درخواست مشاوره</h1> </center>  
+  <hr>  
+  <label> نام </label>   
+<input type="text" name="frm[firstname]" placeholder= "لطفا نام خود را وارد کنید" size="20" required />   
+<label>  نام خانوادگی</label>   
+<input type="text" name="frm[lastname]" placeholder="لطفا نام خانوادگی خود را وارد کنید" size="25" required />   
+<label>نام پدر : </label>    
+<input type="text" name=" frm[fname]" placeholder="لطفا نام پدر خود را وارد کنید" size="15"/>   
+<div>  
+<label>   
+جنسیت :  
+</label><br>  
+<input type="radio" value="male" name="gendre[ ]" checked >مرد   
+<input type="radio" value="female" name="gendre[ ]"> زن   
+<input type="radio" value="other" name="gendre[ ]"> سایر  
+  </div>  
+<label>   
+تلفن همراه :  
+</label>  
+<br>
+<input type="tel" name="frm[mphone]" placeholder="شماره همراه خود را وارد کنید" size="15" dir="ltr"/>  
+<br><br>
+<label>   
+    تلفن ثابت :  
+</label> 
+<br>  
+<input type="tel" name="frm[phone]" placeholder="شماره ثابت خود را وارد کنید" size="15" required dir="ltr"/>   
+<br><br>
+آدرس محل سکونت :  
+<textarea cols="80" rows="5" name="frm[address]" placeholder="لطفا آدرس محل سکونت خود را وارد کنید" value="address" required>  
+</textarea>  
+<label for="email"><b>ایمیل</b></label>  
+<input type="text" placeholder="لطفا ایمیل خود را وارد کنید" name="frm[email]" required>  
+  
+    <label for="psw"><b>رمز عبور</b></label>  
+    <input type="password" placeholder="لطفا یک رمز عبور برای خود انتخاب کنید." name="frm[password]" required>  
+    ایده های شما برای طراحی:  
+    <textarea cols="140" rows="10" name="frm[idea]" value="address" required>  
+    </textarea>
+    <button type="submit" value="submit" class="registerbtn">ارسال درخواست</button>   
+
+</form>
+<div class="footer">
+  <ul class="footer-list">
+      <footer>
+   &copy; <em id="date"></em>
+        تمامی اطلاعات این سایت متعلق به شرکت لیماک می باشد و هر گونه کپی برداری پیگرد قانونی دارد
+   <br>
+         شماره تماس جهت ارتباط : 02137845236
+   <br>
+        آدرس شرکت : تهران،میدان صنعت ، کوچه رز ، پلاک 14 
+      </footer>
+  </ul>  
+</div>  
+</body>  
+</html>
